@@ -1,0 +1,481 @@
+/* Background gradient for the whole page */
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(135deg, #90ee90 0%, #003366 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container for login/register forms */
+/* Container styling */
+.auth-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Image styling */
+.auth-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Optional form heading and link colors, etc. can stay same as before */
+
+
+/* Form heading */
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+/* Labels */
+.auth-form .form-label {
+  font-weight: 600;
+  color: #004080;
+}
+
+/* Input fields */
+.auth-form .form-control {
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1.5px solid #90ee90; /* light green border */
+  transition: border-color 0.3s ease;
+}
+
+.auth-form .form-control:focus {
+  border-color: #003366; /* dark blue on focus */
+  box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
+}
+
+/* Submit button */
+.auth-form button[type="submit"] {
+  background-color: #003366; /* dark blue */
+  border: none;
+  font-weight: 600;
+  padding: 0.6rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  color: #4ef79d; /* light green text */
+  width: 100%;
+}
+
+.auth-form button[type="submit"]:hover {
+  background-color: #0059b3; /* lighter dark blue */
+  color: #ccffcc; /* lighter green text */
+}
+
+/* Links below the form */
+.form-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #000000; /* light greenish */
+}
+
+.form-link a {
+  color: #58b858; /* lighter green */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-link a:hover {
+  text-decoration: underline;
+  color: #73b273;
+}
+/* Full viewport login page with gradient + image + form */
+.login-page {
+  height: 100vh;      /* full viewport height */
+  width: 100vw;       /* full viewport width */
+  background: linear-gradient(135deg, #040404 0%, #2d2f31 100%);
+  overflow: hidden;
+}
+
+/* Image styling */
+.login-image {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Form container */
+.auth-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 90vw;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  color: #003366;
+}
+
+/* Responsive spacing for small screens */
+@media (max-width: 768px) {
+  .carousel-img {
+    max-height: 300px; /* Smaller max height on mobile */
+  }
+}
+
+/* src/components/Header.css */
+.header {
+  background-color: #003366; /* Dark blue background */
+  color: #90ee90; /* Light green text */
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* Assuming navbar height ~56px */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Add top padding equal to navbar height */
+.carousel-wrapper {
+  padding-top: 56px; /* navbar height */
+  width: 100vw;      /* full viewport width */
+  overflow: hidden;  /* hide scrollbars if any */
+}
+
+/* Carousel image styling */
+.carousel-wrapper img {
+  width: 100%;           /* full width */
+  height: calc(100vh - 56px); /* full viewport height minus navbar */
+  object-fit: cover;     /* crop & fill container nicely */
+  display: block;
+}
+
+/* Promo Section Below Carousel */
+/* Transparent promo section overlay look */
+.promo-section {
+  width: 100%;
+  padding: 3rem 1rem;
+  background: none; /* no background box */
+  text-align: center;
+  color: #010406; /* dark blue text */
+  margin-top: 2rem;
+}
+
+.promo-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  color: #003366;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo-buttons {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;
+  gap: 1rem;
+}
+
+.promo-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.05rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.promo-btn.primary {
+  background-color: #003366;
+  color: #90ee90;
+}
+
+.promo-btn.primary:hover {
+  background-color: #0059b3;
+  color: white;
+}
+
+.promo-btn.secondary {
+  background-color: #90ee90;
+  color: #003366;
+}
+
+.promo-btn.secondary:hover {
+  background-color: #6fd96f;
+}
+/* Default navbar at top - transparent background */
+.navbar-top {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: none;
+}
+
+/* Navbar when scrolled - solid bg + shadow */
+.navbar-scrolled {
+  background-color: #003366 !important; /* your dark blue */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar brand color change (optional) */
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .dropdown-toggle {
+  color: #90ee90 !important; /* light green */
+}
+
+/* Navbar brand and links default colors */
+.navbar-top .navbar-brand,
+.navbar-top .nav-link,
+.navbar-top .dropdown-toggle {
+  color: white !important;
+}
+
+/* Nav link hover */
+.navbar-scrolled .nav-link:hover,
+.navbar-top .nav-link:hover {
+  color: #4ef79d !important;
+}
+
+/* Responsive tweaks if needed */
+@media (max-width: 991px) {
+  .custom-container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+/* Services.css */
+
+.service-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-card div {
+  font-size: 3rem; /* emoji/icon size */
+}
+
+.service-card h5 {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #003366; /* dark blue */
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.text-center h4 {
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+button.btn-success {
+  background-color: #003366;
+  border-color: #003366;
+  color: #90ee90; /* light green */
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-success:hover {
+  background-color: #0059b3;
+  border-color: #0059b3;
+  color: #ccffcc;
+}
+.services-card-wrapper {
+  padding-left: 40px; /* shifts everything slightly to the right */
+}
+
+/* Optional: Make sure this only applies on larger screens */
+@media (max-width: 768px) {
+  .services-card-wrapper {
+    padding-left: 0;
+  }
+}
+.shift-right {
+  margin-left: 30px;
+}
+.services-row {
+  margin-left: 30px; /* Adjust this value as needed */
+}
+.services-row {
+  padding-left: 35px; /* subtle shift to the right */
+}
+.pricing-card {
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+.content-wrapper {
+  padding-top: 70px; /* adjust based on navbar height */
+}
+h5 {
+  color: #004080;
+  font-weight: 600;
+}
+
+.card p {
+  color: #555;
+}
+.pricing-background {
+  position: relative;
+  background-image: url('../assets/au2.jpg'); /* or set via inline style */
+  background-size: cover;      /* cover entire container */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat;
+  padding: 50px 20px;          /* add padding inside */
+  min-height: 100vh;           /* full viewport height */
+  color: #003366;              /* text color adjustment for visibility */
+}
+
+/* Optional: add a semi-transparent overlay if needed */
+.pricing-background::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgb(0, 0, 0); /* white overlay with transparency */
+  z-index: 0;
+}
+
+/* Make sure inner content sits above overlay */
+.pricing-background > * {
+  position: relative;
+  z-index: 1;
+}
+/* Add in your CSS file or global styles */
+.about-fullscreen {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-content {
+  color: #ffffff;
+  max-width: 700px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4); /* optional translucent for readability */
+  border-radius: 10px;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.github-link {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #90ee90;
+  text-decoration: underline;
+}
+
+.github-link:hover {
+  color: #ffffff;
+}
+.contact-info {
+  margin-top: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.contact-info p {
+  margin: 0.3rem 0;
+}
+
+.contact-link {
+  color: #90ee90;
+  text-decoration: underline;
+}
+
+.contact-link:hover {
+  color: #ffffff;
+}
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: nowrap;  /* force single row */
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.review-card {
+  background: #90ee90;
+  border-radius: 12px;
+  padding: 1.8rem 1.5rem;
+  width: 300px;          /* fixed width for 3 cards in row */
+  color: #003366;
+  box-shadow: 0 4px 15px rgba(0, 51, 102, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 950px) {
+  .reviews-container {
+    flex-wrap: wrap;  /* allow wrap on smaller screens */
+  }
+  .review-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 1.5rem auto;
+  }
+}
+
